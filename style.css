@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #e2e7ec;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 15px;
+  min-height: 100vh;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 540px);
+  grid-template-areas:
+    "bigItem bigItem item1"
+    "item2 item3 item4";
+  grid-gap: 20px;
+}
+
+.big-item {
+  grid-area: bigItem;
+  /* grid-column: 1 / -2; */
+  background: url("./Layer 8.svg") center/cover;
+}
+
+.card {
+  background: #fff;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__text {
+  padding: 24px 24px 0 24px;
+}
+
+.card__date {
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 15px;
+
+  color: #818181;
+}
+
+.card__label {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  margin-top: 16px;
+  color: #1d1d1d;
+}
+
+.big-item,
+.card {
+  border-radius: 10px;
+}
+
+.card1 {
+  grid-area: item1;
+  background-color: #fff;
+}
+
+.card2 {
+  grid-area: item2;
+}
+
+.card3 {
+  grid-area: item3;
+}
+
+.card4 {
+  grid-template: item4;
+}
+
+@media (max-width: 1150px) {
+  .container {
+      grid-gap: 10px;
+  }
+}
