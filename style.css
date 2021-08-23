@@ -36,7 +36,6 @@ body {
 .card__image {
   position: relative;
   height: 200px;
-  /* border-radius: 10px 10px 0 0; */
 }
 
 .card__image > img {
