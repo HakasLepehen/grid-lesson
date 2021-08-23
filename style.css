@@ -25,7 +25,6 @@ body {
 
 .big-item {
   grid-area: bigItem;
-  /* grid-column: 1 / -2; */
   background: url("./Layer 8.svg") center/cover;
 }
 
